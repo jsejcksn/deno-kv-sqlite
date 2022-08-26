@@ -84,7 +84,7 @@ export type MemoryBooleanOptions = ExcludedKeys<{ memory: true }, 'path'>;
 export type MemoryOptions = MemoryBooleanOptions | MemoryStringOptions;
 export type PathObjectOptions = ExcludedKeys<{ path: string }, 'memory'>;
 export type PathOptions = PathObjectOptions | string;
-export type DBOptions = PathOptions | MemoryOptions;
+export type DbOptions = PathOptions | MemoryOptions;
 
 export type BaseKVMethods = {
   clear: () => void;
@@ -108,7 +108,7 @@ export type KVDb<T = JsonValue> =
   & TypedKVMethods<string>
   & { json: BaseKVMethods & TypedKVMethods<T> };
 
-export function openKVDb <T = JsonValue>(options?: DBOptions): KVDb<T> {
+export function openKVDb <T = JsonValue>(options?: DbOptions): KVDb<T> {
   let dbPath: string | undefined = undefined;
   let dbOptions: { readonly memory: true } | undefined = undefined;
   if (options) {
