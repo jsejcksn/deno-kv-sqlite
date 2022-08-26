@@ -13,7 +13,7 @@ Key-Value storage backed by [SQLite](https://sqlite.org/) (uses
 ## Use
 
 ```ts
-import { openKVDb } from "./mod.ts";
+import { openKVDb } from "https://deno.land/x/kv_sqlite@VERSION/mod.ts";
 
 // Open a persistent database using the local file system (it will be created if necessary):
 const kv = openKVDb("path/to/kv-database.sqlite3");
