@@ -1,4 +1,4 @@
-# deno-kv-sqlite
+# kv_sqlite
 
 Key-Value storage backed by [SQLite](https://sqlite.org/) (uses
 [`deno.land/x/sqlite`](https://deno.land/x/sqlite))
@@ -9,6 +9,14 @@ Key-Value storage backed by [SQLite](https://sqlite.org/) (uses
 
 - Stores keys and values as strings (like the
   [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API))
+
+## API documentation
+
+Generated TypeScript API documentation is available at:
+
+- [`https://deno.land/x/kv_sqlite/mod.ts`](https://deno.land/x/kv_sqlite/mod.ts)
+
+- [`https://doc.deno.land/https://deno.land/x/kv_sqlite/mod.ts`](https://doc.deno.land/https://deno.land/x/kv_sqlite/mod.ts)
 
 ## Use
 
