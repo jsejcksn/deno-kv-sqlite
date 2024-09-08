@@ -1,4 +1,4 @@
-export * as path from 'https://deno.land/std@0.198.0/path/mod.ts';
+export * as path from 'jsr:@std/path@1.0.4';
 export {
   assert,
   assertArrayIncludes,
@@ -6,4 +6,4 @@ export {
   assertInstanceOf,
   assertStrictEquals,
   assertThrows,
-} from 'https://deno.land/std@0.198.0/assert/mod.ts';
+} from 'jsr:@std/assert@1.0.4';
