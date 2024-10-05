@@ -1,4 +1,4 @@
-export * as path from 'jsr:@std/path@1.0.4';
+export * as path from 'jsr:@std/path@1.0.6';
 export {
   assert,
   assertArrayIncludes,
@@ -6,4 +6,4 @@ export {
   assertInstanceOf,
   assertStrictEquals,
   assertThrows,
-} from 'jsr:@std/assert@1.0.4';
+} from 'jsr:@std/assert@1.0.6';
