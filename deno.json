@@ -1,5 +1,18 @@
 {
-  "tasks": {
-    "test": "deno test --allow-read=testdata --allow-write=testdata"
-  }
+	"compilerOptions": {
+		"exactOptionalPropertyTypes": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noUncheckedIndexedAccess": true,
+		"useUnknownInCatchVariables": true,
+		"lib": ["deno.window"]
+	},
+	"exclude": ["./untracked"],
+	"fmt": { "useTabs": true },
+	"imports": {},
+	"tasks": {
+		"check": "deno fmt && deno lint && deno task check:types",
+		"check:types": "deno check **/*.ts",
+		"test": "deno test --allow-read=testdata --allow-write=testdata"
+	}
 }
