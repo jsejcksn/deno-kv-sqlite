@@ -12,7 +12,8 @@ Key-Value storage backed by [SQLite](https://sqlite.org/) (uses
 
 ## API documentation
 
-Generated TypeScript API documentation is available at [`https://deno.land/x/kv_sqlite/mod.ts`](https://deno.land/x/kv_sqlite/mod.ts)
+Generated TypeScript API documentation is available at
+[`https://deno.land/x/kv_sqlite/mod.ts`](https://deno.land/x/kv_sqlite/mod.ts)
 
 ## Use
 
